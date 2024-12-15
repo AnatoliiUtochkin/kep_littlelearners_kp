@@ -1,0 +1,592 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+
+    .heading {
+        .container {
+            margin-top: 40px;
+            margin-bottom: 80px;
+            position: relative;
+            width: 22.375rem;
+            height: 23.938rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #FFFFFF;
+            border: 2px solid #262626;
+            border-radius: 12px;
+            box-shadow: 4px 4px 0px 1px #1E1E1E;
+
+            .border {
+                position: absolute;
+                width: 6.25rem;
+                height: 6.25rem;
+                align-self: flex-start;
+                top: 0;
+            }
+
+            .el {
+                .admission-heading-text {
+                    .tag {
+                        width: 6rem;
+                        justify-self: center;
+    
+                        .tag-text {
+                            font-size: 0.875rem;
+                            line-height: 1.313rem;
+                        }
+                    }
+
+                    .second-level-title {
+                        margin-top: 10px;
+                        margin-bottom: 20px;
+                        width: 18.625rem;
+                        height: 4.5rem;
+
+                        .second-level-title-text {
+                            font-family: 'Raleway';
+                            font-weight: 700;
+                            font-size: 1.75rem;
+                            line-height: 2.275rem;
+                        }
+                    }
+                }
+
+                .info-description {
+                    width: 18.625rem;
+                    height: 9rem;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .admission-process {
+        .center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .tag {
+            width: 4.813rem;
+            height: 2.313rem;
+            justify-self: center;
+
+            .tag-text {
+                font-size: 0.875rem;
+                line-height: 1.313rem;
+            }
+        }
+
+        .second-level-title {
+            width: 22.375rem;
+            height: 3.063rem;
+            margin-bottom: 10px;
+            text-align: center;
+            
+            .second-level-title-text {
+                font-size: 2.375rem;
+                line-height: 3.088rem;
+            }
+        }
+
+        .info-description {
+            width: 22.375rem;
+            height: 7.5rem;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            margin-bottom: 50px;
+        }
+
+
+        .steps {
+            .step {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin-bottom: 68px;
+
+                .number {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 5.875rem;
+                    height: 4.5rem;
+                    background-color: #FFFFFF;
+                    border: 2px solid #262626;
+                    border-radius: 12px;
+                    box-shadow: 4px 4px 0px 1px #1E1E1E;
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: 800;
+                    font-size: 2.5rem;
+                    line-height: 3.25rem;
+                    margin-bottom: 50px;
+
+                    &::after {
+                        position: absolute;
+                        bottom: -4.063rem;
+                        content: url("../images/admission/connector.svg");
+                        z-index: 98;
+                    }
+                }
+
+                .card {
+                    position: relative;
+                    width: 22.375rem;
+                    background-color: #FFFFFF;
+                    border: 2px solid #262626;
+                    border-radius: 12px;
+                    box-shadow: 4px 4px 0px 1px #1E1E1E;
+                    padding: 1.875rem;
+                    z-index: 99;
+
+                    .card-title {
+                        font-family: 'Raleway', sans-serif;
+                        font-weight: 700;
+                        font-size: 1.625rem;
+                        line-height: 2.113rem;
+                        margin-bottom: 14px;
+                        color: #1A1A1A;
+                    }
+
+                    .card-description {
+                        font-family: 'Outfit', sans-serif;
+                        font-weight: 500;
+                        font-size: 1rem;
+                        line-height: 1.5rem;
+                        color: #4C4C4D;
+                    }
+
+                     &::after {
+                        position: absolute;
+                        content: url("../images/admission/connector-default.svg");
+                        z-index: 99;
+                        bottom: -4.625rem;
+                        left: 50%;
+                        transform: translateX(-50%);
+                     }
+                }
+
+                &:last-child {
+                    .card::after {
+                        content: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .fee_structure {
+        width: 100%;
+        padding-left: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+
+        .tag {
+            width: 6.875rem;
+            justify-self: center;
+
+            .tag-text {
+                font-size: 0.875rem;
+                line-height: 1.313rem;
+            }
+        }
+
+        .second-level-title {
+            width: 22.375rem;
+            height: 3.063rem;
+
+            .second-level-title-text {
+                font-size: 2.375rem;
+                line-height: 3.088rem;
+            }
+        }
+
+        .info-description {
+            width: 22.375rem;
+            height: 6rem;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            margin-top: 10px;
+        }
+
+        .table_container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            width: 103%;
+            height: 24.875rem;
+            background-color: #FFFFFF;
+            border: 2px solid #262626;
+            border-radius: 12px;
+            box-shadow: 4px 4px 0px 1px #1E1E1E;
+            padding: 1.875rem;
+            padding-right: 0;
+            padding-bottom: 20px;
+
+            .table_wrapper {
+                width: 100%;
+                height: 100%;
+                padding-bottom: 1.313rem;
+                overflow-x: auto;
+                overflow-y: hidden;
+
+                #fee_table {
+                    width: 70rem;
+                    border-collapse: separate;
+                    border-spacing: 0;
+                    padding-right: 1.313rem;
+
+                    thead {
+                        border: 2px solid #262626;
+                        border-radius: 10px;
+    
+                        tr {
+                            background-color: #FFEFE5;
+    
+                            th {
+                                width: 15.25rem;
+                                height: 3.938rem;
+                                padding: 0.1rem 2.125rem;
+                                border: 2px solid #262626;
+                                font-family: 'Outfit', sans-serif;
+                                font-weight: 700;
+                                font-size: 1.25rem;
+                                line-height: 1.875rem;
+                                text-align: left;
+                            } 
+                        }
+
+                        th:first-child,
+                        td:first-child {
+                            border-top-left-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                        }
+
+                        th:last-child,
+                        td:last-child {
+                            border-top-right-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                        }
+
+                        th:not(:last-child) {
+                            border-right: none;
+                        }
+                    }
+
+                    tbody {
+                        border: 2px solid #262626;
+                        border-radius: 10px;
+    
+                        tr {
+                            background-color: #FFFCFA;
+                            width: 76.25rem;
+    
+                            td {
+                                width: 15.25rem;
+                                height: 4.688rem;
+                                padding: 0.75rem 0.75rem;
+                                border: 2px solid #262626;
+                                font-family: 'Outfit', sans-serif;
+                                font-weight: 500;
+                                font-size: 1.125rem;
+                                line-height: 1.688rem;
+                            }
+                        }
+
+                        tr:first-child td:first-child {
+                            border-top-left-radius: 10px;
+                        }
+        
+                        tr:last-child td:last-child {
+                            border-bottom-right-radius: 10px;
+                        }
+        
+                        tr:first-child td:last-child {
+                            border-top-right-radius: 10px;
+                        }
+        
+                        tr:last-child td:first-child {
+                            border-bottom-left-radius: 10px; 
+                        }
+        
+                        tr:not(:last-child) {
+                            border-right: none;
+                            border-bottom: none;
+                        }
+        
+                        tr:not(:last-child) td {
+                            border-bottom: none;
+                        }
+        
+                        tr td:not(:last-child) {
+                            border-right: none;
+                        }
+
+                        &::before {
+                            display: block;
+                            line-height: 1.875rem;
+                            content: "\200C";
+                        }
+                    }
+                }
+
+                &::-webkit-scrollbar {
+                    height: 0.5rem;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background-color: #FFAE80;
+                    width: 11.125rem;
+                    border-radius: 59px;
+                }
+                
+                &::-webkit-scrollbar-track {
+                    background-color: #262626;
+                    border-radius: 59px;
+                }
+            }
+        }
+
+        margin-bottom: 80px;
+    }
+
+    @media screen and (min-width: 1920px) {
+        .heading {
+            .container {
+                margin-top: 60px;
+                margin-bottom: 200px;
+                width: 92.3vw;
+                height: 30.313rem;
+    
+                .two-cols-desktop {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: auto;
+                    gap: 3.125rem;
+    
+                    .center {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                    }
+    
+                    .el {
+                        width: 47.813rem;
+    
+                        .admission-heading-text {
+                            .tag {
+                                width: 7.688rem;
+                                height: 2.938rem;
+                                justify-self: flex-start;
+    
+                                .tag-text {
+                                    font-size: 1.125rem;
+                                    line-height: 1.688rem;
+                                }
+                            }
+    
+                            .second-level-title {
+                                margin-top: 14px;
+                                margin-bottom: 0;
+                                width: 47.813rem;
+                                height: 7.75rem;
+                                    
+                                .second-level-title-text {
+                                    font-size: 3rem;
+                                    line-height: 3.9rem;
+                                    text-align: left;
+                                }
+                            }
+                        }
+    
+                        .info-description {
+                            width: 47.813rem;
+                            height: 5.625rem;
+                            font-size: 1.25rem;
+                            line-height: 1.875rem;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .admission-process {
+            .center {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            .tag {
+                width: 6.375rem;
+                height: 2.938rem;
+
+                .tag-text {
+                    font-size: 1.125rem;
+                    line-height: 1.688rem;
+                }
+            }
+
+            .second-level-title {
+                width: 62.188rem;
+                height: 4.688rem;
+
+                .second-level-title-text {
+                    font-size: 3.625rem;
+                    line-height: 4.713rem;
+                }
+            }
+
+            .info-description {
+                width: 62.188rem;
+                height: 3.75rem;
+                font-size: 1.25rem;
+                line-height: 1.875rem;
+            }
+
+            .steps {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 3.125rem;
+
+                .step {
+                    width: 31.125rem;
+                    height: 31.563rem;
+                    margin: 0;
+
+                    .number {
+                        align-self: flex-start;
+                        width: 8rem;
+                        height: 6.625rem;
+                        font-size: 3.75rem;
+                        line-height: 4.875rem;
+                        margin-bottom: 45px;
+                    }
+
+                    .card {
+                        width: 31.125rem;
+                        height: 20.125rem;
+                        padding: 3.125rem;
+
+                        .card-title {
+                            font-size: 2.5rem;
+                            line-height: 3.25rem;
+                            margin-bottom: 20px;
+                        }
+
+                        .card-description {
+                            width: 24.875rem;
+                            height: 9.375rem;
+                            font-size: 1.25rem;
+                            line-height: 1.875rem;
+                        }
+                    }
+
+                    .card::after {
+                        content: none;
+                    }
+                }
+            }
+        }
+    
+        .fee_structure {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-bottom: 200px;
+
+            .center {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            .tag {
+                width: 9.125rem;
+                height: 2.938rem;
+                justify-self: center;
+                margin-top: 200px;
+    
+                .tag-text {
+                    font-size: 1.125rem;
+                    line-height: 1.688rem;
+                }
+            }
+    
+            .second-level-title {
+                width: 62.25rem;
+                height: 4.688rem;
+                margin-top: 19px;
+                
+    
+                .second-level-title-text {
+                    font-size: 3.625rem;
+                    line-height: 4.713rem;
+                }
+            }
+    
+            .info-description {
+                width: 62.25rem;
+                height: 3.75rem;
+                font-size: 1.25rem;
+                line-height: 1.875rem;
+                margin-top: 19px;
+            }
+
+            .table_container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 99.75rem;
+                height: 28.125rem;
+                padding: 3.75rem;
+                padding-bottom: 0;
+                padding-top: 1.875rem;
+
+                .table_wrapper {
+                    overflow-x: hidden;
+                    padding-bottom: 0;
+                    height: 23.75rem;
+                    
+                    #fee_table {
+                        width: 100%;
+
+                        thead {
+                            tr {
+                                th {
+                                    width: 18.438rem;
+                                    height: 5rem;
+                                }
+                            }
+                        }
+
+                        tbody {
+                            tr {
+                                th {
+                                    width: 18.438rem;
+                                    height: 5.625rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

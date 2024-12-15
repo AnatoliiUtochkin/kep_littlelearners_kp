@@ -1,0 +1,275 @@
+$font-family: 'Outfit', sans-serif;
+$gray-color: #262626;
+$primary-bg-color: #FFDECC;
+$secondary-bg-color: #FF8D4D;
+$tertiary-bg-color: #FFEFE5;
+$border-radius: 0.5rem;
+$gap: 1rem;
+
+.hidden {
+    display: none;
+}
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 9;
+    display: none;
+}
+
+.menu-overlay.active {
+    display: block;
+}
+
+.page-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: visible;
+    gap: $gap * 0.87;
+
+    .admission-link {
+        text-decoration: none;
+        color: black;
+        margin: 0;
+        padding: 0;
+    }
+
+    .admission-banner {
+        position: relative;
+        width: 92.3vw;
+        height: 2.81rem;
+        border: 2px solid $gray-color;
+        border-radius: $border-radius;
+        gap: 0.6rem;
+        background-color: $primary-bg-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.75rem 1.15rem;
+        overflow: hidden;
+        white-space: nowrap;
+        margin-top: 2.5rem;
+        margin-left: 15px;
+        margin-right: 15px;
+    
+        .admission-content {
+            font-family: 'Outfit', sans-serif;
+            display: flex;
+            align-items: center;
+            font-size: 0.875rem;
+            line-height: 1.31rem;
+            font-weight: 500;
+            z-index: 2;
+    
+            .arrow {
+                margin-left: 0.62rem;
+            }
+        }
+    
+        .left-bg, .right-bg, .left-top, .right-bottom {
+            position: absolute;
+            height: auto;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .left-bg {
+            left: 0;
+        }
+
+        .right-bg {
+            right: 0;
+        }
+
+        .left-top {
+            top: 0;
+            left: 0;
+            z-index: 2;
+        }
+
+        .right-bottom {
+            bottom: 0;
+            right: 0;
+            z-index: 2;
+        }
+    }
+    
+    .off-screen-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 80%;
+        height: 100vh;
+        background-color: $primary-bg-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 0.45s ease-in-out;
+        z-index: 10;
+
+        &.active {
+            transform: translateX(0);
+        }
+
+        .menu-site-logo {
+            transform: scale(180%);
+            margin: 50px auto;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: $gap * 1.5;
+
+            li {
+                font-family: $font-family;
+                font-size: 1.5rem;
+                text-align: center;
+
+                a {
+                    text-decoration: none;
+                    color: $gray-color;
+                }
+            }
+        }
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        width: 92.3vw;
+        height: 3.87rem;
+        border: 2px solid $gray-color;
+        border-radius: $border-radius;
+        overflow: hidden;
+        white-space: nowrap;
+        margin-left: 17px;
+        margin-right: 17px;
+    
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 11.06rem;
+            height: 100%;
+            background-color: $secondary-bg-color;
+            border-right: 2px solid $gray-color;
+        }
+    
+        .burger-menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 5.5rem;
+            height: 100%;
+            background-color: $tertiary-bg-color;
+            border-left: 2px solid $gray-color;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .admission-banner {
+        .left-top, .right-bottom, .left-bg, .right-bg {
+            display: none;
+        }
+
+        .desktop-header-icon-left, .desktop-header-icon-right {
+            display: block;
+            position: absolute;
+            height: auto;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .desktop-right-bg, .desktop-left-bg {
+            display: block;
+            position: absolute;
+        }
+
+        .desktop-header-icon-left {
+            top: 0;
+            left: 25%;
+        }
+
+        .desktop-header-icon-right {
+            bottom: 0;
+            right: 25%;
+            transform: scaleY(-1);
+        }
+
+        .desktop-right-bg {
+            right: 0;
+        }
+
+        .desktop-left-bg {
+            transform: scaleX(-1);
+            left: 0;
+        }
+    }
+
+    .navbar {
+        .navbar-desktop-menu {
+            display: flex;
+            justify-content: center;
+        
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                li {
+                    list-style-type: none;
+        
+                    a {
+                        font-family: $font-family;
+                        font-weight: 500;
+                        font-size: 1rem;
+                        border-left: 2px solid $gray-color;
+                        height: 100vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-decoration: none;
+                        color: $gray-color;
+                        padding: 1rem 1.87rem;
+                        height: 4.12rem;
+                        transition: 0.3s ease-in-out;
+                        
+                        &:hover {
+                            background-color: #f9e4d9;
+                        }
+                    }
+                    .active {
+                        background-color: #FFEFE5;
+                    }
+
+                    &:last-child {
+                        background-color: #FFAE80;
+                    }
+
+                    
+                }
+            }
+        }
+    }
+
+    .page-header {
+        .navbar {
+            .burger-menu {
+                display: none;
+            }
+        }
+    }
+}

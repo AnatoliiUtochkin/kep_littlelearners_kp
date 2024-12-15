@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Admission</title>
+{% endblock %}
+
+{% block body %}
+<main>
+    <section class="heading">
+        <div class="container">
+            <img src="{{ url_for('static', filename='images/contact/border.svg') }}" alt="" class="border">
+    
+            <div class="two-cols-desktop">
+                <div class="el">
+                    <div class="admission-heading-text">
+                        <p class="tag"><span class="tag-text">Прийом</span></p>
+                        <h2 class="second-level-title"><p class="second-level-title-text">Приєднуйтесь до нашої родини юних учнів</p></h2>
+                    </div>
+                </div>
+    
+                <div class="el center">
+                    <p class="info-description">В Little Learners Academy ми запрошуємо вас розпочати захоплюючу освітню подорож для вашої дитини. Наш процес прийому розроблений таким чином, щоб бути прозорим, простим і інклюзивним. Ось покрокова інструкція, як приєднатися до нашої школи.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="admission-process">
+        <div class="center">
+            <p class="tag"><span class="tag-text">Процес</span></p>
+            <h2 class="second-level-title"><p class="second-level-title-text">Процес прийому</p></h2>
+            <p class="info-description">Розпочніть захоплюючу освітню подорож разом з нами! Наш процес прийому та реєстрації є воротами до надання вашій дитині виняткового досвіду навчання в нашому дитячому садку.</p>
+        </div>
+
+        <div class="steps" id="steps-container">
+        </div>
+    </section>
+    
+    <section class="fee_structure">
+        <div class="center">
+            <p class="tag"><span class="tag-text">Оплата</span></p>
+            <h2 class="second-level-title"><p class="second-level-title-text">Структура оплати</p></h2>
+            <p class="info-description">Наша структура оплати є прозорою, і ми прагнемо підтримувати конкурентоспроможні ціни в секторі освіти. Вартість залежить від програми, вікової групи та будь-яких додаткових послуг, які ви обираєте.</p>
+        </div>
+    
+        <div class="table_container">
+            <div class="table_wrapper">
+                <table id="fee_table">
+                    <thead>
+                        <tr>
+                            <th>Програма</th>
+                            <th>Вікова група</th>
+                            <th>Щорічна плата за навчання</th>
+                            <th>Реєстраційний збір</th>
+                            <th>Збір за активності</th>
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    
+        <div class="table_container">
+            <div class="table_wrapper">
+                <table id="fee_table" class="add-services">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Додаткові послуги</th>
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="{{ url_for('static', filename='scripts/table.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/steps.js') }}"></script>
+</main>
+{% endblock %}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+    <meta name="author" content="Anatolii Utochkin" />
+    <meta name="description" content="LittleLearners Academy - школа для дітей раннього віку, яка пропонує підтримуюче та стимулююче середовище для розвитку любові до навчання. Приєднуйтесь до нас на захоплюючу освітню подорож!" />
+    <link rel = "icon" type = "image/png" href = "{{ url_for('static', filename='images/icon.png') }}">
+    {% block head %}{% endblock %}
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="menu-overlay hidden"></div>
+        <a href="{{ url_for('admission_page') }}" class="admission-link">
+            <div class="admission-banner">
+                <img src="{{ url_for('static', filename='images/navbar/desktop-header-bg.svg') }}" alt="" class="desktop-right-bg hidden">
+                <img src="{{ url_for('static', filename='images/navbar/desktop-header-bg.svg') }}" alt="" class="desktop-left-bg hidden">
+                <img src="{{ url_for('static', filename='images/navbar/left-bg.svg') }}" alt="" class="left-bg">
+                <img src="{{ url_for('static', filename='images/navbar/right-bg.svg') }}" alt="" class="right-bg">
+                <div class="admission-content">
+                    <span>Прийом відкрито, встигніть зайняти своє місце</span>
+                    <img src="{{ url_for('static', filename='images/navbar/arrow.svg') }}" alt="" class="arrow">
+                </div>
+                <img src="{{ url_for('static', filename='images/navbar/left-top.svg') }}" alt="" class="left-top">
+                <img src="{{ url_for('static', filename='images/navbar/right-bottom.svg') }}" alt="" class="right-bottom">
+                <img src="{{ url_for('static', filename='images/navbar/left-top.svg') }}" alt="" class="desktop-header-icon-left hidden">
+                <img src="{{ url_for('static', filename='images/navbar/left-top.svg') }}" alt="" class="desktop-header-icon-right hidden">
+            </div>
+        </a>
+    
+        <nav>
+            <div class="off-screen-menu">
+                <img src="{{ url_for('static', filename='images/navbar/logo.svg') }}" alt="Логотип сайту" class="menu-site-logo">
+                <ul>
+                    <li><a href="{{ url_for('home_page') }}">Головна</a></li>
+                    <li><a href="{{ url_for('about_page') }}">Про нас</a></li>
+                    <li><a href="{{ url_for('academics_page') }}">Навчання</a></li>
+                    <li><a href="{{ url_for('admission_page') }}">Прийом</a></li>
+                    <li><a href="{{ url_for('student_life_page') }}">Студентське життя</a></li>
+                    <li><a href="{{ url_for('contact_page') }}">Контакти</a></li>
+                </ul>
+            </div>
+    
+            <div class="navbar">
+                <div class="logo-container">
+                    <a href="{{ url_for('home_page') }}">
+                        <img src="{{ url_for('static', filename='images/navbar/logo.svg') }}" alt="Логотип сайту" class="site-logo">
+                    </a>
+                </div>
+                <div class="navbar-desktop-menu hidden">
+                    <ul>
+                        <li><a href="{{ url_for('home_page') }}">Головна</a></li>
+                        <li><a href="{{ url_for('about_page') }}">Про нас</a></li>
+                        <li><a href="{{ url_for('academics_page') }}">Навчання</a></li>
+                        <li><a href="{{ url_for('admission_page') }}">Прийом</a></li>
+                        <li><a href="{{ url_for('student_life_page') }}">Студентське життя</a></li>
+                        <li><a href="{{ url_for('contact_page') }}">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="burger-menu">
+                    <img src="{{ url_for('static', filename='images/navbar/menu-icon.svg') }}" alt="Іконка меню" class="burger-menu-icon">
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    
+    {% block body %}
+    {% endblock %}
+
+    <footer>
+        <div class="container">
+            <div class="flex-container">
+                <div class="flex-container-item">
+                    <div class="footer_logo">
+                        <img src="{{ url_for('static', filename='images/footer/logo.svg') }}" alt="">
+                        <p>Ми віримо в силу гри, яка сприяє творчості.</p>
+                    </div>
+    
+                    <div class="footer_contact">
+                        <a href="mailto:hello@littlelearners.com">
+                            <span class="footer_icon">
+                                <span class="icon">
+                                    <img src="{{ url_for('static', filename='images/footer/mail-icon.svg') }}" alt="">
+                                </span><p>hello@littlelearners.com</p>
+                            </span>
+                        </a>
+                        <a href="tel:+9191813232309">
+                            <span class="footer_icon">
+                                <span class="icon">
+                                    <img src="{{ url_for('static', filename='images/footer/phone-icon.svg') }}" alt="">
+                                </span><p>+91 91813 23 2309</p>
+                            </span>
+                        </a>
+                        <a href="https://maps.app.goo.gl/Q7Ko9xN2Pibs7n3v7">
+                            <span class="footer_icon">
+                                <span class="icon">
+                                    <img src="{{ url_for('static', filename='images/footer/geo-icon.svg') }}" alt="">
+                                </span><p>Десь у світі</p>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="flex-container-item">
+                    <div class="footer_links">
+                        <div class="footer_column">
+                          <h2>Головна</h2>
+                          <a href="#features">Особливості</a>
+                          <a href="#testimonials">Відгуки</a>
+                          <a href="#faq">Поширені питання</a>
+                        </div>
+                        <div class="footer_column">
+                          <h2>Навчання</h2>
+                          <a href="#">Спеціальні можливості</a>
+                          <a href="#">Галерея</a>
+                        </div>
+                        <div class="footer_column">
+                          <h2>Про нас</h2>
+                          <a href="#">Наша місія</a>
+                          <a href="#">Наша візія</a>
+                          <a href="#">Нагороди та відзнаки</a>
+                          <a href="#">Історія</a>
+                          <a href="#">Вчителі</a>
+                        </div>
+                        <div class="footer_column">
+                          <h2>Контакти</h2>
+                          <a href="#">Інформація</a>
+                          <a href="#">Карта та напрямки</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <img src="{{ url_for('static', filename='images/footer/line.svg') }}" alt="" class="line">
+    
+            <div class="flex-container-row">
+                <div class="footer_policies">
+                    <div class="links">
+                        <a href="#">Умови</a>
+                        <a href="#">Політика конфідеційності</a>
+                        <a href="#">Файли</a>
+                    </div>
+                </div>
+    
+                <div class="footer_socials">
+                    <a href="#"><span class="footer__icon"><img src="{{ url_for('static', filename='images/footer/fb-icon.svg') }}" alt=""></span></a>
+                    <a href="#"><span class="footer__icon"><img src="{{ url_for('static', filename='images/footer/x-icon.svg') }}" alt=""></span></a>
+                    <a href="#"><span class="footer__icon"><img src="{{ url_for('static', filename='images/footer/ln-icon.svg') }}" alt=""></span></a>
+                </div>
+            </div>
+    
+            <img src="{{ url_for('static', filename='images/footer/line.svg') }}" alt="" class="line">
+    
+            <div class="footer_copyright">
+                <p>Авторське право &copy; [2023] Академія Маленьких Дослідників. Усі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="{{ url_for('static', filename='scripts/burger-menu.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/active-menu-option.js') }}"></script>
+</body>
+</html>

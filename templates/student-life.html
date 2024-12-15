@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Student Life</title>
+{% endblock %}
+
+{% block body %}
+<main>
+    <section class="heading">
+        <div class="container">
+            <img src="{{ url_for('static', filename='images/contact/border.svg') }}" alt="" class="border">
+    
+            <div class="two-cols-desktop">
+                <div class="el">
+                    <div class="heading-text">
+                        <p class="tag"><span class="tag-text">Збагачення життя учнів</span></p>
+                        <h2 class="second-level-title"><p class="second-level-title-text">Відкривайте навчання через відкриття та радість</p></h2>
+                    </div>
+                </div>
+    
+                <div class="el center">
+                    <p class="info-description">У Little Learners Academy ми запрошуємо вас розпочати захоплюючу освітню подорож для вашої дитини. Наш процес прийому розроблений так, щоб бути прозорим, простим та інклюзивним. Ось покрокова інструкція щодо вступу до нашої школи.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="activities extra">
+        <div class="benefits-container">
+            <p class="tag"><span class="tag-text">Особливості</span></p>
+            <h2 class="second-level-title"><p class="second-level-title-text">Позакласні заходи</p></h2>
+            <p class="info-description">У Little Learners Academy ми віримо у виховання всебічно розвинутих особистостей. Наші позакласні заходи пропонують різноманітні можливості, які доповнюють нашу академічну програму та заохочують учнів досліджувати свої інтереси та захоплення. Ми пропонуємо широкий вибір позакласних активностей, включаючи</p>
+            <div class="benefits-card-container">
+                <div class="benefit-card">
+                    <img src="{{ url_for('static', filename='images/students-life/thunder.svg') }}" alt="Icon" class="card-icon">
+                    <h3 class="card-title">Спортивні заходи</h3>
+                    <p class="card-description">Учні можуть брати участь у різних спортивних змаганнях, від футболу та баскетболу до гімнастики та йоги. Спорт допомагає розвивати командну роботу, фізичну форму та відчуття дисципліни.</p>
+                </div>
+                <div class="benefit-card">
+                    <img src="{{ url_for('static', filename='images/students-life/pen.svg') }}" alt="Icon" class="card-icon">
+                    <h3 class="card-title">Мистецтво</h3>
+                    <p class="card-description">Наші уроки мистецтва та творчі майстер-класи дають учням можливість виразити свою творчість через живопис, малювання та інші художні форми.</p>
+                </div>
+                <div class="benefit-card">
+                    <img src="{{ url_for('static', filename='images/students-life/note.svg') }}" alt="Icon" class="card-icon">
+                    <h3 class="card-title">Музика</h3>
+                    <p class="card-description">Учні можуть відкривати свої музичні таланти через спів, гру на музичних інструментах та участь у театральних виставах.</p>
+                </div>
+                <div class="benefit-card">
+                    <img src="{{ url_for('static', filename='images/students-life/puzzle.svg') }}" alt="Icon" class="card-icon">
+                    <h3 class="card-title">Мовні клуби</h3>
+                    <p class="card-description">Мовні клуби дають учням можливість зануритися в різні мови та культури, сприяючи розвитку глобальної свідомості.</p>
+                </div>
+                <div class="benefit-card">
+                    <img src="{{ url_for('static', filename='images/students-life/chem.svg') }}" alt="Icon" class="card-icon">
+                    <h3 class="card-title">Науковий клуб</h3>
+                    <p class="card-description">Науковий клуб дозволяє молодим науковцям досліджувати чудеса науки через захоплюючі експерименти та практичне навчання.</p>
+                </div>
+                <div class="benefit-card">
+                    <img src="{{ url_for('static', filename='images/students-life/stars.svg') }}" alt="Icon" class="card-icon">
+                    <h3 class="card-title">Кулінарне мистецтво</h3>
+                    <p class="card-description">Кулінарні класи знайомлять учнів з радістю приготування смачних та корисних страв.</p>
+                </div>
+            </div>
+
+            <section class="activities events">
+                <div class="center">
+                    <p class="tag"><span class="tag-text">Події</span></p>
+                    <h2 class="second-level-title"><p class="second-level-title-text">Події та святкування</p></h2>
+                    <p class="info-description">У Little Learners Academy ми святкуємо кожну віху та створюємо незабутні спогади для наших учнів. Протягом року ми проводимо різноманітні заходи та святкування, які об'єднують всю шкільну громаду. Ось деякі з наших незабутніх подій:</p>
+                </div>
+            
+                <div class="cards">
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/students-life/image/sports-day.webp') }}" alt="" class="card-image">
+                        
+                        <div class="desc">
+                            <h3 class="desc-header">Щорічний Спортивний День</h3>
+                            <p class="desc-info">День, наповнений дружнім змаганням, командним духом і спортивною етикою.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/students-life/image/fests.webp') }}" alt="" class="card-image">
+            
+                        <div class="desc">
+                            <h3 class="desc-header">Культурні Фестивалі</h3>
+                            <p class="desc-info">Святкування різноманітних культурних фестивалів, що сприяють культурному обміну та взаємоповазі.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/students-life/image/art.webp') }}" alt="" class="card-image">
+            
+                        <div class="desc">
+                            <h3 class="desc-header">Виставки мистецтв</h3>
+                            <p class="desc-info">Демонстрація художніх талантів наших учнів через виставки та експозиції.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/students-life/image/science.webp') }}" alt="" class="card-image">
+            
+                        <div class="desc">
+                            <h3 class="desc-header">Наукова Ярмарка</h3>
+                            <p class="desc-info">Платформа для молодих науковців, щоб представити свої інноваційні проекти та експерименти.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/students-life/image/international-day.webp') }}" alt="" class="card-image">
+            
+                        <div class="desc">
+                            <h3 class="desc-header">Міжнародний День</h3>
+                            <p class="desc-info">Яскраве святкування нашої різноманітної громади, яке охоплює культури з усього світу.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/students-life/image/graduation.webp') }}" alt="" class="card-image">
+            
+                        <div class="desc">
+                            <h3 class="desc-header">Церемонія випуску</h3>
+                            <p class="desc-info">Важливий етап, коли наші учні дитячого садка готуються розпочати свій академічний шлях.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+
+            <div class="benefits-container small-block">
+                <p class="tag"><span class="tag-text">Досягнення</span></p>
+                <h2 class="second-level-title"><p class="second-level-title-text">Підтримка учнів</p></h2>
+                <p class="info-description">У Little Learners Academy ми прагнемо забезпечити підтримуюче середовище, яке відповідає потребам кожного учня. Наші послуги підтримки включають:</p>
+            
+                <div class="benefits-card-container">
+                    <div class="benefit-card">
+                        <img src="{{ url_for('static', filename='images/students-life/lamp.svg') }}" alt="Icon" class="card-icon">
+                        <h3 class="card-title">Консультування</h3>
+                        <p class="card-description">Професійні консультанти надають поради та підтримку учням, займаючись їх емоційним та соціальним благополуччям.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <img src="{{ url_for('static', filename='images/students-life/book.svg') }}" alt="Icon" class="card-icon">
+                        <h3 class="card-title">Підтримка в навчанні</h3>
+                        <p class="card-description">Наші педагоги надають додаткову допомогу учням, яким може знадобитися додаткова підтримка в навчальному процесі.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <img src="{{ url_for('static', filename='images/students-life/team.svg') }}" alt="Icon" class="card-icon">
+                        <h3 class="card-title">Співпраця</h3>
+                        <p class="card-description">Ми сприяємо тісній співпраці з батьками, щоб забезпечити безперешкодну комунікацію та взаємну підтримку в розвитку дитини.</p>
+                    </div>
+                </div>
+            </div>
+    </section>   
+</main>
+{% endblock %}

@@ -1,0 +1,918 @@
+main {
+    .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .image-container {
+            margin-top: 50px;
+            position: relative;
+            display: inline-block;
+    
+            .kids-image {
+                display: block;
+                width: 22.375rem;
+            }
+        }
+    }
+    
+
+    .tag {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 13.75rem;
+        height: 2.313rem;
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 6px;
+
+        .tag-text {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 500;
+            font-size: 0.875rem;
+            line-height: 1.313rem;
+            text-align: center;
+        }
+    }
+    .second-level-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .second-level-title-text {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            font-size: 2.375rem;
+            line-height: 3.088rem;
+            text-align: center;
+            margin-top: 10px;
+        }
+    }
+    
+
+    .info-description {
+        display: block;
+        width: 22.375rem;
+        height: 6rem;
+        font-family: 'Outfit', sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-align: center;
+        color: #242424;
+    }
+
+    .welcome-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .info-title-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 40px;
+            margin-left: 16px;
+            margin-right: 16px;
+            gap: 10px;
+
+            .info-title, .info-title-description {
+                text-align: center;
+            }
+
+            .info-title {
+                font-family: 'Outfit', sans-serif;
+                font-weight: 500;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                color: #262626;
+                text-decoration: underline;
+                text-underline-offset: 0.625rem;
+                text-decoration-thickness: 0.125rem;
+            }
+
+            .info-title-description {
+                font-family: 'Raleway', sans-serif;
+                font-weight: 800;
+                font-size: 1.875rem;
+                line-height: 2.438rem;
+                margin-top: 10px;
+
+                .orange {
+                    color: #FF8D4D;
+                }
+            }
+        }
+
+        .welcome-information {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+            width: 22.375rem;
+            height: 24.063rem;
+            border: 2px solid #262626;
+            border-radius: 10px;
+            margin-top: 40px;
+            background-color: #FFEFE5;
+            box-shadow: 4px 4px #FFBE99;
+
+            .welcome-information-block {
+                width: 17.375rem;
+                height: 5.938rem;
+                border-bottom: 2px solid #262626;
+
+                .highlighted-number {
+                    font-family: 'Outfit', sans-serif;
+                    font-weight: 800;
+                    font-size: 2.125rem;
+                    line-height: 3.188rem;
+                    text-align: center;
+                }
+
+                .number-details {
+                    font-family: 'Outfit', sans-serif;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    text-align: center;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    .benefits-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 88px;
+
+        .info-description {
+            margin-top: 10px;
+            margin-bottom: 80px;
+        }
+
+        .benefits-card-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 40px;
+            
+            .benefit-card {
+                position: relative;
+                width: 22.125rem;
+                background-color: white;
+                border: 2px solid #262626;
+                border-radius: 10px;
+                box-shadow: 4px 4px 0px 1px #1E1E1E;
+
+                .card-icon {
+                    position: absolute;
+                    top: -12.5%;
+                    left: 1.5rem;
+                    width: 3.5rem;
+                    height: 3.5rem;
+                    border: 2px solid #262626;
+                    padding: 16px;
+                    border-radius: 8px;
+                    background-color: #FFDECC;
+                }
+
+                .card-title {
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: 700;
+                    font-size: 1.375rem;
+                    line-height: 1.788rem;
+                    color: #1a1a1a;
+                    margin-top: 50px;
+                    margin-left: 30px;
+                }
+
+                .card-description {
+                    font-family: 'Outfit', sans-serif;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    color: #4C4C4D;
+                    margin-top: 16px;
+                    margin-bottom: 30px;
+                    margin-left: 30px;
+                    margin-right: 40px;
+                }
+            }
+        }
+    }
+
+    .testimonials-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .tag {
+            width: 10.375rem;
+            height: 2.313rem;
+            margin-top: 88px;
+        }
+
+        .info-description {
+            margin-bottom: 20px;
+        }
+
+        .swiper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 22.375rem;
+            height: 26.25rem;
+            position: relative;
+
+            .testimonial {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 22.125rem;
+                height: 20.125rem;
+                background-color: #FFFFFF;
+                border: 2px solid #262626;
+                border-radius: 10px;
+                box-shadow: 4px 4px 0px 1px #1E1E1E;
+
+                .avatar {
+                    border-radius: 50%;
+                    width: 4.125rem;
+                    height: 4.125rem;
+                    margin-top: 30px;
+                }
+
+                .person-name {
+                    margin-top: 10px;
+                    font-family: 'Outfit', sans-serif;
+                    font-weight: 600;
+                    font-size: 1.25rem;
+                    line-height: 1.875rem;
+                    text-align: center;
+                }
+
+                .rating {
+                    margin-top: 20px;
+                    width: 7.25rem;
+                    height: 1.25rem;
+                }
+
+                .testimonial-text {
+                    padding-left: 29px;
+                    padding-right: 29px;
+                    padding-bottom: 29px;
+                    margin-top: 20px;
+                    font-family: 'Outfit', sans-serif;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    text-align: center;
+                }
+            } 
+
+            .swiper-button-prev, .swiper-button-next {
+                position: absolute;
+                bottom: 0;
+                width: 3rem;
+                height: 3rem;
+                background-color: #FFFFFF;
+                border: 2px solid #333333;
+                border-radius: 8px;
+                margin: 0;
+                margin-top: 15px;
+                transform: translateY(130px);
+
+                &::after {
+                    content: '';
+                }
+            }
+
+            .swiper-button-prev {
+                left: 34%;
+            }
+
+            .swiper-button-next {
+                right: 34%;
+            }
+        }
+    }
+
+    .questions-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .tag {
+            width: 11.438rem;
+            height: 2.313rem;
+            margin-top: 80px;
+        }
+
+        .info-description {
+            margin-bottom: 20px;
+        }
+
+        .accordion {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 22.375rem;
+
+            .contentBx {
+                position: relative;
+                margin-left: 16px;
+                margin-right: 16px;
+                margin-bottom: 20px;
+
+                .label {
+                    width: 22.313rem;
+                    height: 5.875rem;
+                    position: relative;
+                    padding-top: 20px;
+                    padding-left: 24px;
+                    padding-right: 20px;
+                    background-color: #FFEFE5;
+                    color: #262626;
+                    font-family: 'Outfit', sans-serif;
+                    font-weight: 600;
+                    font-size: 1.125rem;
+                    line-height: 1.688rem;
+                    border: 2px solid #262626;
+                    border-radius: 10px;
+                    cursor: pointer;
+
+                    p {
+                        max-width: 15rem;
+                    }
+
+                    &:before {
+                        content: "+";
+                        position: absolute;
+                        top: 50%;
+                        right: 1.5rem;
+                        width: 2rem;
+                        height: 2rem;
+                        border: 2px solid #262626;
+                        border-radius: 4px;
+                        font-family: 'Outfit', sans-serif;
+                        font-size: 1.375rem;
+                        font-weight: 300;
+                        background-color: #FFF5F0;
+                        text-align: center;
+                        transform: translateY(-50%);
+                    }
+                }
+
+                .content {
+                    position: relative;
+                    background: #FFFFFF;
+                    height: 0;
+                    overflow: hidden;
+                    overflow-y: hidden;
+
+                    .accordion-line {
+                        width: 19.375rem;
+                    }
+                }
+
+                &.active {
+                    .label {
+                        background-color: #FFFFFF;
+                        border-bottom: none;
+                        border-bottom-right-radius: 0px;
+                        border-bottom-left-radius: 0px;
+                    }
+
+                    .content {
+                        padding-left: 24px;
+                        padding-right: 24px;
+                        overflow-y: hidden;
+                        min-height: 150px;
+                        max-height: 400px;
+                        border-bottom: 2px solid #262626;
+                        border-left: 2px solid #262626;
+                        border-right: 2px solid #262626;
+                        border-bottom-left-radius: 10px;
+                        border-bottom-right-radius: 10px;
+
+                        p {
+                            font-family: 'Outfit', sans-serif;
+                            font-weight: 500;
+                            font-size: 1rem;
+                            line-height: 1.5rem;
+                            padding-top: 12px;
+                        }
+                    }
+
+                    .label:before {
+                        content: "-";
+                    }
+                }
+            
+                .big-question {
+                    height: 7.563rem;
+                }
+            }
+        }
+    }
+
+    .navigation-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .tag {
+            margin-top: 55px;
+            width: 7rem;
+        }
+
+        .second-level-title-text {
+            width: 22.375rem;
+        }
+
+        .links {
+            margin-top: 80px;
+
+            .link {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                width: 22.375rem;
+                height: 26.625rem;
+                border: 2px solid #262626;
+                border-radius: 10px;
+                background-color: #FFFFFF;
+                box-shadow: 4px 4px 0px 1px #1E1E1E;
+                margin-bottom: 40px;
+
+                .link-header {
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: 700;
+                    font-size: 1.75rem;
+                    line-height: 2.275rem;
+                    text-align: center;
+                    padding: 40px;
+                    padding-bottom: 20px;
+                }
+
+                .line {
+                    background-image: url("../images/home-page/link-line.svg");
+                    background-size: auto;
+                    margin-bottom: 30px;
+                }
+
+                .link-description {
+                    width: 17.375rem;
+                    height: 9rem;
+                    font-family: 'Outfit', sans-serif;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    text-align: center;
+                    color: #4C4C4D;
+                }
+
+                .learn-more-button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 17.375rem;
+                    height: 3.5rem;
+                    background-color: #FFDECC;
+                    box-shadow: 4px 4px 0px 1px #1E1E1E;
+                    border: 2px solid #262626;
+                    border-radius: 6px;
+                    margin-top: 40px;
+
+                    .learn-more-button-text {
+                        font-family: 'Outfit', sans-serif;
+                        font-weight: 500;
+                        font-size: 1rem;
+                        line-height: 1.5rem;
+                        text-align: center;
+                    }
+
+                    .arrow {
+                        margin-left: 10px;
+                    }
+                }
+
+                .link-link {
+                    text-decoration: none;
+                    color: #333333;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1920px) {
+        .image-and-info-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+
+            .image-container {
+                .kids-image {
+                    width: 47.81rem;
+                    height: 49.063rem;
+                }
+            }
+
+            .welcome-info {
+                .info-title-container {
+                    margin-left: 40px;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+
+                    .info-title, .info-title-description {
+                        text-align: left;
+                    }
+
+                    .info-title {
+                        font-size: 1.375rem;
+                        line-height: 2.063rem;
+                    }
+
+                    .info-title-description {
+                        width: 47.813rem;
+                        height: 8.75rem;
+                        font-size: 3.375rem;
+                        line-height: 4.388rem;
+                    }
+
+                    .info-description {
+                        width: 47.813rem;
+                        height: 5.625rem;
+                        font-size: 1.25rem;
+                        line-height: 1.875rem;
+                        text-align: left;
+                        margin-bottom: 40px;
+                    }
+
+                    .welcome-information {
+                        width: 47.813rem;
+                        height: 6.875rem;
+                        flex-direction: row;
+                        margin: 0;
+
+                        .welcome-information-block {
+                            width: 13.313rem;
+                            height: 5.813rem;
+                            margin: 0;
+                            border-bottom: none;
+
+                            .highlighted-number {
+                                text-align: left;
+                            }
+
+                            .number-details {
+                                text-align: left;
+                                padding: 0;
+                                width: 13.313rem;
+                                height: 1.688rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .benefits-container {
+            .tag {
+                width: 17.938rem;
+                height: 2.938rem;
+
+                .tag-text {
+                    font-weight: 500;
+                    font-size: 1.125rem;
+                    line-height: 1.688rem;
+                    text-align: center;
+                }
+            }
+
+            .second-level-title {
+                .second-level-title-text {
+                    width: 62rem;
+                    height: 4.688rem;
+                    font-weight: 700;
+                    font-size: 3.625rem;
+                    line-height: 4.713rem;
+                    text-align: center;
+                }
+            }
+
+            .info-description {
+                width: 62rem;
+                height: 3.75rem;
+                font-weight: 500;
+                font-size: 1.25rem;
+                line-height: 1.875rem;
+                text-align: center;
+            }
+
+            .benefits-card-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 2;
+                gap: 3.75rem;
+
+                .benefit-card {
+                    width: 31.5rem;
+                    height: 19.125rem;
+
+                    .card-icon {
+                        width: 4.625rem;
+                        height: 4.625rem;
+                        background-size: contain;
+                    }
+
+                    .card-title {
+                        margin-top: 64px;
+                        margin-left: 54px;
+                        width: 20rem;
+                        height: 1.938rem;
+                        font-weight: 700;
+                        font-size: 1.5rem;
+                        line-height: 1.95rem;
+                    }
+
+                    .card-description {
+                        width: 25.25rem;
+                        height: 7.5rem;
+                        font-weight: 500;
+                        font-size: 1.25rem;
+                        line-height: 1.875rem;
+                        margin-left: 54px;
+                    }
+                }
+            }
+        }
+
+        .testimonials-container {
+            .tag {
+                width: 13.563rem;
+                height: 2.938rem;
+
+                .tag-text {
+                    width: 11.875rem;
+                    height: 1.688rem;
+                    font-weight: 500;
+                    font-size: 1.125rem;
+                    line-height: 1.688rem;
+                }
+            }
+
+            .second-level-title {
+                .second-level-title-text {
+                    width: 62rem;
+                    height: 4.688rem;
+                    font-weight: 700;
+                    font-size: 3.625rem;
+                    line-height: 4.713rem;
+                    text-align: center;
+                }
+            }
+
+            .info-description {
+                width: 62rem;
+                height: 3.75rem;
+                font-weight: 500;
+                font-size: 1.25rem;
+                line-height: 1.875rem;
+                text-align: center;
+                margin-bottom: 55px;
+            }
+
+            .swiper {
+                width: (26.625rem * 3) + (3.125rem * 3) + (6.75rem * 2) + 4.375rem;
+                height: 30rem;
+                margin-left: -30px;
+                padding-right: 60px;
+
+                .swiper-wrapper {
+                    width: (26.625rem * 3) + (3.125rem * 3);
+                    height: 28.875rem;
+                }
+
+                .swiper-button-next, .swiper-button-prev {
+                    position: absolute;
+                    top: 45%;
+                    transform: translateY(-45%);
+                }
+
+                .swiper-button-next {
+                    right: 0px;
+                }
+
+                .swiper-button-prev {
+                    left: 3rem;
+                }
+
+                .testimonial {
+                    width: 26.625rem;
+                    height: 28.938rem;
+
+                    .avatar {
+                        width: 5rem;
+                        height: 5rem;
+                        margin-top: 50px;
+                    }
+
+                    .person-name {
+                        margin-top: 12px;
+                        font-size: 1.5rem;
+                        line-height: 2.25rem;
+                    }
+
+                    .rating {
+                        margin-top: 30px;
+                        width: 8.75rem;
+                        height: 1.5rem;
+                    }
+
+                    .testimonial-text {
+                        padding-left: 50px;
+                        padding-right: 50px;
+                        padding-bottom: 50px;
+                        margin-top: 30px;
+                        font-size: 1.25rem;
+                        line-height: 1.875rem;
+                    }
+                }
+            }
+        }
+
+        .questions-container {
+            .tag {
+                width: 14.938rem;
+                height: 2.938rem;
+
+                .tag-text {
+                    font-size: 1.125rem;
+                    line-height: 1.688rem;
+                }
+            }
+
+            .second-level-title {
+                .second-level-title-text {
+                    font-size: 3.625rem;
+                    line-height: 4.713rem;
+                }
+            }
+
+            .info-description {
+                width: 62rem;
+                height: 3.75rem;
+                font-size: 1.25rem;
+                line-height: 1.875rem;
+                margin-top: 15px;
+                margin-bottom: 70px;
+            }
+
+            .accordion {
+                width: 99.5rem;
+                height: auto;
+                max-height: 75rem;
+                display: flex;
+                flex-direction: row;
+                align-items: start;
+                justify-content: center;
+
+                .contentBx {
+                    align-self: start;
+                    .label {
+                        display: flex;
+                        align-items: center;
+                        width: 48.188rem;
+                        font-size: 1.375rem !important;
+                        line-height: 2.063rem !important;
+                        margin: 0;
+
+                        p {
+                            width: 38.813rem;
+                            height: 2.063rem;
+                            max-width: 38.813rem;
+                            align-self: center;
+                            margin-top: -20px;
+                            font-weight: 600;
+                        }
+
+                        &:before {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 1.75rem;
+                        }
+                    }
+
+                    .content {
+                        .accordion-line {
+                            margin: 0;
+                            width: 38.813rem;
+                        }
+                    }
+
+                    &.active {
+                        max-height: 31.25rem;
+                        margin-bottom: 20px;
+
+                        p {
+                            margin: 0;
+                            width: 38.813rem;
+                            font-size: 1.25rem !important; 
+                            line-height: 1.875rem !important; 
+                        }
+                    }
+
+                    .big-question {
+                        height: 6.75rem;
+                    }
+                }
+            }
+        }
+
+        .navigation-container {
+            .tag {
+                width: 9.188rem;
+                height: 2.938rem;
+
+                .tag-text {
+                    font-size: 1.125rem;
+                    line-height: 1.688rem;
+                }
+            }
+
+            .second-level-title {
+                .second-level-title-text {
+                    width: 62.25rem;
+                    height: 4.688rem;
+                    font-weight: 700;
+                    font-size: 3.625rem;
+                    line-height: 4.713rem;
+                }
+            }
+
+            .info-description {
+                font-size: 1.25rem;
+                line-height: 1.875rem;
+                width: 62.25rem;
+                height: 3.75rem;
+                margin-top: 20px;
+            }
+
+            .links {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 3.125rem;
+
+                .link {
+                    width: 48.313rem;
+                    height: 36.75rem;
+
+                    .link-header {
+                        margin-top: 80px;
+                        font-weight: 700;
+                        font-size: 3rem;
+                        line-height: 3.9rem;
+
+                        .line {
+                            width: 38.313rem;
+                        }
+                    }
+
+                    .link-description {
+                        width: 38.313rem;
+                        height: 7.5rem;
+                        font-weight: 500;
+                        font-size: 1.25rem;
+                        line-height: 1.875rem;
+                    }
+
+                    .learn-more-button {
+                        margin-top: 30px;
+                        width: 38.313rem;
+                        height: 4.125rem;
+
+                        .learn-more-button-text {
+                            font-size: 1.25rem;
+                            line-height: 1.875rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
